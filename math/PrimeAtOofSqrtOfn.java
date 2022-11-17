@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class FactorFinder {
+public class PrimeAtOofSqrtOfn {
         public static void main(String[] arg) {
             Scanner scan = new Scanner(System.in);
             System.out.print("enter a no. to find a prime no : ");
@@ -11,7 +11,7 @@ public class FactorFinder {
                     continue;
                 }
                 count = 0;
-                for (int i = 2; i < Math.sqrt(a); i++) {
+                for (int i = 2; i <= Math.sqrt(a); i++) {
                     if(a%i==0){
                         count++;
                         break;
