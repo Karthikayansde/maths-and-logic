@@ -6,3 +6,17 @@
 2.4321 TO 1234;
 3.Addition of digit;
 4.fibinasi with loop;
+5.leap year;
+if(n%4 == 0){
+            if(n%100 == 0){
+                if(n%400 == 0){
+                    System.out.println(n + " is a leap year");
+                }else{
+                    System.out.println(n+" is not a leap year");
+                }
+            }else{
+                System.out.println(n + " is a leap year");
+            }
+        }else{
+            System.out.println(n+" is not a leap year");
+        }
