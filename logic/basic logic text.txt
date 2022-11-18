@@ -3,9 +3,13 @@
         a = a+b; //15
         b = a-b;
         a = a-b;
+        
 2.4321 TO 1234;
+
 3.Addition of digit;
+
 4.fibinasi with loop;
+
 5.leap year;
 if(n%4 == 0){
             if(n%100 == 0){
@@ -20,3 +24,58 @@ if(n%4 == 0){
         }else{
             System.out.println(n+" is not a leap year");
         }
+
+6.perfect no finder;factors like 1+2+3=6;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a val : ");
+        int n = scan.nextInt(),sum = 0;
+        for (int i = 1; i <= n/2; i++) {
+            if(n%i == 0){
+                sum += i;
+            }
+        }
+        if(sum == n){
+            System.out.println(n+" is perfect no.");
+        }else{
+            System.out.println(n+" is not perfect no.");
+        }
+
+7.factorial finder;
+        System.out.print("enter a val : ");
+        int n = scan.nextInt(),sum = 1;
+        for (int i = n; i!=0; i--) {
+            sum *= i;
+        }
+        System.out.println(sum);
+
+8.strong no finder; 145 = 1!+4!+5! = 145;
+    public static int factOf(int val){
+        int sum = 1;
+        for (int i = val; i!=0; i--) {
+            sum *= i;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a val : ");
+        int n = scan.nextInt(),sum = 0;
+        System.out.println(n);
+        while(n!=0){
+            sum += factOf(n%10);
+            n /= 10;
+        }
+        System.out.println(sum);
+    }
+
+9.power of no finder;
+        System.out.print("enter a base : ");
+        int b = scan.nextInt();
+        System.out.print("enter a power : ");
+        int p = scan.nextInt(),ans = 1;
+        for (int i = 1; i <= p; i++) {
+            ans *=b;
+        }
+        System.out.println(ans);
+
+10.
