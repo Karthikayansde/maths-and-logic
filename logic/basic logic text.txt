@@ -1,4 +1,8 @@
 1.swap 2 var without extra variable;
+        int a = 10,b = 5;
+        a = a+b; //15
+        b = a-b;
+        a = a-b;
 2.4321 TO 1234;
 3.Addition of digit;
 4.fibinasi with loop;
