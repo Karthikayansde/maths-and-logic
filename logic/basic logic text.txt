@@ -92,4 +92,20 @@ if(n%4 == 0){
                 max += toAdd;
             }
         }
+
 11.gcd or hcf finder;
+        System.out.print("enter a first no : ");
+        int no1 = scan.nextInt();
+        System.out.print("enter a 2nd no : ");
+        int no2 = scan.nextInt();
+        int min = no1<no2?no1:no2;
+        while(true){
+            if(no1%min==0 && no2%min==0){
+                System.out.println(min + " is a gcd or hcf");
+                break;
+            }else{
+                min --;
+            }
+        }
+
+12.
