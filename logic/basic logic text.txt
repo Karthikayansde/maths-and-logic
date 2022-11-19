@@ -78,7 +78,35 @@ if(n%4 == 0){
         }
         System.out.println(ans);
 
-10.lcm finder;
+10.amstrong no finder; a pow d, a = digit, d = count of digit;
+    static int digitFinder(int n){
+        int sum = 0;
+        while(n != 0){
+            n /= 10;
+            sum++;
+        }
+        return sum;
+    }
+    static int powFinder(int base,int pow){
+        int sum = 1;
+        for (int i = 0; i < pow; i++) {
+            sum *= base;
+        }
+        return sum;
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a first no : ");
+        int no1 = scan.nextInt(),no = no1;
+        int digit = digitFinder(no1),sum = 0;
+        while (no1 != 0) {
+            sum += powFinder(no1%10, digit);
+            no1 /= 10;
+        }
+        System.out.println("input is : "+no+" output is : "+sum);
+    }
+
+11.lcm finder;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -93,7 +121,7 @@ if(n%4 == 0){
             }
         }
 
-11.gcd or hcf finder;
+12.gcd or hcf finder;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -108,7 +136,7 @@ if(n%4 == 0){
             }
         }
 
-12.gcd using euclidean algorithm with loop;
+13.gcd using euclidean algorithm with loop;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -120,7 +148,7 @@ if(n%4 == 0){
         }while(c != 0);
         System.out.println(no1);
 
-13.gcd using euclidean algorithm with recursion;
+14.gcd using euclidean algorithm with recursion;
     static int gcd(int a,int b){
         if(b==0){
             return a;
@@ -137,10 +165,10 @@ if(n%4 == 0){
         System.out.println(gcd(no1,no2));
     }
 
-14.lcm using euclidean gcd; lcm == (a*b)/gcd(a,b);
+15.lcm using euclidean gcd; lcm == (a*b)/gcd(a,b);
         int gcd = gcd(no1,no2);
         int lcm = (no1*no2)/gcd;
         System.out.println(gcd);
         System.out.println(lcm);
 
-15.
+16.
