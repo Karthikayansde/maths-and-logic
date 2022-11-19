@@ -137,3 +137,10 @@ if(n%4 == 0){
         System.out.println(gcd(no1,no2));
     }
 
+14.lcm using euclidean gcd; lcm == (a*b)/gcd(a,b);
+        int gcd = gcd(no1,no2);
+        int lcm = (no1*no2)/gcd;
+        System.out.println(gcd);
+        System.out.println(lcm);
+
+15.
