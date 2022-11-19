@@ -78,4 +78,18 @@ if(n%4 == 0){
         }
         System.out.println(ans);
 
-10.
+10.lcm finder;
+        System.out.print("enter a first no : ");
+        int no1 = scan.nextInt();
+        System.out.print("enter a 2nd no : ");
+        int no2 = scan.nextInt();
+        int max = no1>no2?no1:no2,toAdd = max;
+        while(true){
+            if(max%no1==0 && max%no2==0){
+                System.out.println(max + " is a lcd");
+                break;
+            }else{
+                max += toAdd;
+            }
+        }
+11.gcd or hcf finder;
