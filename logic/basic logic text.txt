@@ -121,3 +121,19 @@ if(n%4 == 0){
         System.out.println(no1);
 
 13.gcd using euclidean algorithm with recursion;
+    static int gcd(int a,int b){
+        if(b==0){
+            return a;
+        }else{
+            return gcd(b,a%b);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("enter a first no : ");
+        int no1 = scan.nextInt();
+        System.out.print("enter a 2nd no : ");
+        int no2 = scan.nextInt();
+        System.out.println(gcd(no1,no2));
+    }
+
