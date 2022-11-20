@@ -105,8 +105,17 @@ if(n%4 == 0){
         }
         System.out.println("input is : "+no+" output is : "+sum);
     }
+11.neon no finder; 9 => square of no so 9*9 = 81 => add of digit 8 + 1 = 9;
+        int n = scan.nextInt();
+        n = n*n;
+        int temp = 0;
+        while(n>0){
+            temp = temp + n%10;
+            n /= 10;
+        }
+        System.out.println(temp);
 
-11.lcm finder;
+12.lcm finder;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -121,7 +130,7 @@ if(n%4 == 0){
             }
         }
 
-12.gcd or hcf finder;
+13.gcd or hcf finder;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -136,7 +145,7 @@ if(n%4 == 0){
             }
         }
 
-13.gcd using euclidean algorithm with loop;
+14.gcd using euclidean algorithm with loop;
         System.out.print("enter a first no : ");
         int no1 = scan.nextInt();
         System.out.print("enter a 2nd no : ");
@@ -148,7 +157,7 @@ if(n%4 == 0){
         }while(c != 0);
         System.out.println(no1);
 
-14.gcd using euclidean algorithm with recursion;
+15.gcd using euclidean algorithm with recursion;
     static int gcd(int a,int b){
         if(b==0){
             return a;
@@ -165,10 +174,10 @@ if(n%4 == 0){
         System.out.println(gcd(no1,no2));
     }
 
-15.lcm using euclidean gcd; lcm == (a*b)/gcd(a,b);
+16.lcm using euclidean gcd; lcm == (a*b)/gcd(a,b);
         int gcd = gcd(no1,no2);
         int lcm = (no1*no2)/gcd;
         System.out.println(gcd);
         System.out.println(lcm);
 
-16.
+17.
